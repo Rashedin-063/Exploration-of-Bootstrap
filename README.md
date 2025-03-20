@@ -2,4 +2,4 @@
 
 ### Tutorials I have followed
 - Official documentation
-- (Bootstrap Crash Course)[https://www.youtube.com/watch?v=-qfEOE4vtxE&t=938s] 
+- [Bootstrap Crash Course](https://www.youtube.com/watch?v=-qfEOE4vtxE&t=938s) 
