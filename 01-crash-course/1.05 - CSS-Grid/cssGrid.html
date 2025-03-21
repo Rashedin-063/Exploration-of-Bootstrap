@@ -15,16 +15,15 @@
       .child{
         background-color: #2041d3;
       }
-
+ .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+      gap: 10px; /* Adds spacing between grid items */
+    }
     </style>
   </head>
   <body>
 
-    <div class="grid text-center">
-  <div class="g-col-4">.g-col-4</div>
-  <div class="g-col-4">.g-col-4</div>
-  <div class="g-col-4">.g-col-4</div>
-</div>
    
 <section class="container border p-5">
   <div class="grid text-center">
@@ -42,10 +41,18 @@
 </div>
 </section>
 <section class="container border p-5 mt-5">
-
+ <div class="grid text-bg-primary p-2">
+    <div class="g-col-6 border">Grid Col 6</div>
+    <div class="g-col-3 border">Grid Col 3</div>
+    <div class="g-col-3 border">Grid Col 3</div>
+  </div>
 </section>
 <section class="container border p-5 mt-5">
-
+ <div class="row text-bg-primary p-2">
+    <div class="col-4 border">Col 4</div>
+    <div class="col-4 border">Col 4</div>
+    <div class="col-4 border">Col 4</div>
+  </div>
 </section>
 <section class="container border p-5 mt-5">
 
