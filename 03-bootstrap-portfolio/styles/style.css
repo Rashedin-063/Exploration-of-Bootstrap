@@ -55,3 +55,21 @@
   .menu-item:hover::before {
     transform: scaleX(1); 
   }
+
+  .btn-primary {
+    background-color: #01713d;
+    color: #fff;
+    border-color: #02a458;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+  }
+
+  .btn-primary:hover{
+    background-color: #013e22;
+    border-color: #016034; 
+  }
+
+  .bg-green {
+    background-color: #01713d;
+    transition: background-color 0.3s ease;
+  }
