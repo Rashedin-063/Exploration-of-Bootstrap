@@ -96,25 +96,28 @@
 
 </section>
 
+<!-- about section -->
 <section id="about" class="my-5 text-center text-light mx-auto container-lg">
-  <div class="d-flex flex-column flex-md-row">
+  <div class="d-flex flex-column flex-md-row align-items-center gap-5 mb-5">
    
      <div class="col-lg-5 col-8 text-center">
       <img 
         src="./assets/profile2.jpg" 
         alt="Rashedin Islam" 
-        class="img-fluid h-75 rounded shadow-lg animate__animated animate__fadeInRight"  
+        class="img-fluid rounded shadow-lg"  
+        style="max-width: 600px; max-height: 400px;"
+
       >
     </div>
      <div>
 <h3>Coding is my canvas, <br> every project is a new masterpiece.</h3>
-<p>I offer professional web development services with a focus on creating user-friendly, responsive, and beautiful websites. Let's work together to bring your ideas to life</p>
+<p class="max-w-xl">I offer professional web development services with a focus on creating user-friendly, responsive, and beautiful websites. Let's work together to bring your ideas to life</p>
     </div>
   </div>
   <div class="row row-gap-4">
     <!-- UI Development Card -->
     <div class="col-md-6 col-lg-4">
-      <div class="card shadow-lg py-3 bg-green text-white hover-scale">
+      <div class="card shadow-lg py-3 bg-green text-white hover-scale rounded--pill ">
         <div class="card-body">
           <i class="bi bi-laptop display-1"></i>
           <h3 class="card-title my-3 fw-bold">UI Development</h3>
@@ -136,7 +139,7 @@
 
     <!-- UX Design Card -->
     <div class="col-md-6 col-lg-4">
-      <div class="card shadow-lg py-3 bg-green text-white hover-scale">
+      <div class="card shadow-lg py-3 bg-green text-white hover-scale ">
         <div class="card-body">
           <i class="bi bi-columns-gap display-1"></i>
           <h3 class="card-title my-3 fw-bold">UX Design</h3>
@@ -179,6 +182,50 @@
     </div>
   </div>
 </section>
+
+<!-- project section -->
+
+<section id="projects" class="my-5 text-center container-lg">
+  <h2 class="display-4 fw-bold mb-5">Projects</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <!-- Project 1 -->
+    <div class="col">
+      <div class="card shadow-lg hover-scale">
+        <img src="./assets/project1.jpg" class="card-img-top" alt="Project 1">
+        <div class="card-body">
+          <h3 class="card-title fw-bold">E-Commerce Website</h3>
+          <p class="card-text">A fully functional e-commerce platform built with React and Node.js.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="col">
+      <div class="card shadow-lg hover-scale">
+        <img src="./assets/project2.jpg" class="card-img-top" alt="Project 2">
+        <div class="card-body">
+          <h3 class="card-title fw-bold">Portfolio Website</h3>
+          <p class="card-text">A modern portfolio website designed with HTML, CSS, and Bootstrap.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="col">
+      <div class="card shadow-lg hover-scale">
+        <img src="./assets/project3.jpg" class="card-img-top" alt="Project 3">
+        <div class="card-body">
+          <h3 class="card-title fw-bold">Mobile App</h3>
+          <p class="card-text">A cross-platform mobile app developed using Flutter.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 </main>
 
