@@ -8,39 +8,66 @@
   <link rel="stylesheet" href="style.css" />
   </head>
   <body>
- <header class="navbar navbar-expand-lg bg-dark navbar-dark">
-  <nav class=" container d-flex justify-content-between">
-  <a href="#" class="navbar-brand">Rashedin Islam</a>
-    <!-- <button
+ <header class="navbar navbar-expand-lg bg-success navbar-dark">
+  <nav class=" container-md d-flex justify-content-between">
+  <a href="#" class="navbar-brand fs-2 fw-bold">Rashedin Islam</a>
+
+    <!-- small and medium screen hamburger -->
+    <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navmenu"
         >
           <span class="navbar-toggler-icon"></span>
-        </button> -->
-  <div>
-    <div class="collapse navbar-collapse">
-    <ul class="navbar-nav ms-5">
-      <li class="nav-item">
-        <a href="#about" class="nav-link">
+        </button>
+   
+        <!-- large screen icon -->
+
+  <!-- <div class="d-none d-lg-flex gap-5 text-white fs-5" >
+    <a href="#about" class="nav-link">
          About
         </a>
-      </li>
-      <li class="nav-item">
-        <a href="#projects" class="nav-link">
+     <a href="#projects" class="nav-link">
          Projects
         </a>
-      </li>
-      <li class="nav-item">
-        <a href="#contact" class="nav-link">
+   <a href="#contact" class="nav-link">
          Contact
         </a>
-      </li>
-    </ul>
-  </div>
-  </div>
-  <button class="btn btn-outlined border border-primary text-white px-4">Login</button>
+  </div> -->
+
+
+       <div class="text-center right-0 collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+             <a href="#about" class="nav-link text-white fs-5">
+         About
+        </a>
+            </li>
+            <li class="nav-item">
+             <a href="#projects" class="nav-link text-white fs-5">
+         Projects
+        </a>
+            </li>
+            <li class="nav-item">
+             <a href="#contact" class="nav-link text-white fs-5">
+         Contact
+        </a>
+        </a>
+            </li>
+            <li class="nav-item d-lg-none">
+             <a href="#login" class="nav-link text-white fs-5">
+         Login
+        </a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+             <a href="#login" class="nav-link text-white fs-5 ms-lg-5 border px-4 py-1 mt-1 rounded ">
+         Login
+        </a>
+            </li>
+          </ul>
+        </div> 
+      
  </nav>
  </header>
 
