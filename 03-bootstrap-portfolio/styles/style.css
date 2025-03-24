@@ -70,15 +70,20 @@
   }
 
   .bg-green {
-     background: linear-gradient(45deg, #105b38, #017e44);
+     background: linear-gradient(45deg, #0a3a24, #016f3c);
     transition: background-color 0.3s ease;
   }
 
-  .bg-gradient-primary {
-    background: linear-gradient(45deg, #105b38, #017e44);
+  .bg-dark {
+     background: linear-gradient(45deg, #363434, #212529);
+    transition: background-color 0.3s ease;
+  }
+
+  /* .bg-gradient-primary {
+    background: linear-gradient(45deg, #105b38, #212529);
     border: none;
     border-radius: 15px;
-  }
+  } */
 
   .hover-scale {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
