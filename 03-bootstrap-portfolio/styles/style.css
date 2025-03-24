@@ -75,7 +75,7 @@
   }
 
   .bg-dark {
-     background: linear-gradient(45deg, #363434, #212529);
+     background: linear-gradient(45deg, #212020, #212529);
     transition: background-color 0.3s ease;
   }
 
@@ -92,4 +92,8 @@
   .hover-scale:hover {
     transform: translateY(-10px); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  label{
+    color: #fff
   }
