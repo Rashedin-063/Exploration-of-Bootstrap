@@ -185,8 +185,8 @@
 
 <!-- project section -->
 
-<section id="projects" class="my-5 container-lg">
-  <h2 class="display-4 fw-bold text-center mb-5">Projects</h2>
+<section id="projects" class="my-5 container-lg" style="margin-top: 100px;">
+  <h2 class="display-4 fw-bold text-light text-center mb-5">Projects</h2>
   <div class="position-relative">
     <!-- Vertical Border -->
     <div class="vertical-border"></div>
@@ -195,7 +195,7 @@
     <div class="row align-items-center my-5">
       <div class="col-md-6"></div> <!-- Empty Left Side -->
       <div class="col-md-6">
-        <div class="card shadow-lg hover-scale">
+        <div class="bg-offWhite shadow-lg hover-scale border border-2 border-success">
           <img src="./assets/project1.jpg" class="card-img-top" alt="Project 1">
           <div class="card-body">
             <h3 class="card-title fw-bold">E-Commerce Website</h3>
@@ -225,7 +225,7 @@
     <div class="row align-items-center my-5">
       <div class="col-md-6"></div> <!-- Empty Left Side -->
       <div class="col-md-6">
-        <div class="card shadow-lg hover-scale">
+        <div class=" shadow-lg hover-scale bg-light">
           <img src="./assets/project3.jpg" class="card-img-top" alt="Project 3">
           <div class="card-body">
             <h3 class="card-title fw-bold">Mobile App</h3>
@@ -238,51 +238,6 @@
   </div>
 </section>
 
-<!-- Custom CSS for the Border and Circles -->
-<style>
-  /* Vertical Border */
-  .vertical-border {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(180deg, #007bff, #00ff88);
-  }
-
-  /* Empty Circles on the Border */
-  .vertical-border::before,
-  .vertical-border::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: transparent;
-    border: 4px solid #007bff;
-  }
-
-  .vertical-border::before {
-    top: 20%; /* Position of the first circle */
-  }
-
-  .vertical-border::after {
-    top: 50%; /* Position of the second circle */
-  }
-
-  /* Hover Effect for Project Cards */
-  .hover-scale {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .hover-scale:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-</style>
 
 
 <!-- contact section -->
@@ -322,6 +277,16 @@
 </section>
 
 
+  <!-- Footer -->
+    <footer class="text-success bg-dark pb-3 text-center position-relative">
+      <div class="container">
+        <p class="">Copyright &copy; 2021 Frontend Bootcamp</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1 text-success"></i>
+        </a>
+      </div>
+    </footer>
 </main>
 
 

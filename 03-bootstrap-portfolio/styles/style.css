@@ -108,7 +108,8 @@
     transform: translateX(-50%);
     width: 4px;
     height: 100%;
-   color: whitesmoke
+   color: whitesmoke;
+   background-color: rgb(255, 255, 255);
   }
 
   /* Empty Circles on the Border */
@@ -122,7 +123,7 @@
     height: 20px;
     border-radius: 50%;
     background: transparent;
-    border: 4px solid #105e02;
+    border: 4px solid #1ba402;
   }
 
   .vertical-border::before {
@@ -131,5 +132,10 @@
 
   .vertical-border::after {
     top: 50%; 
+  }
+ 
+  .bg-offWhite {
+    background-color: #fffffd;
+    color: #212529;
   }
 
