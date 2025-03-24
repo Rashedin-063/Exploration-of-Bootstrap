@@ -99,3 +99,37 @@
     font-size: 18px;
     font-weight: 500;
   }
+
+   /* Vertical Border */
+  .vertical-border {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+   color: whitesmoke
+  }
+
+  /* Empty Circles on the Border */
+  .vertical-border::before,
+  .vertical-border::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: transparent;
+    border: 4px solid #105e02;
+  }
+
+  .vertical-border::before {
+    top: 20%; 
+  }
+
+  .vertical-border::after {
+    top: 50%; 
+  }
+

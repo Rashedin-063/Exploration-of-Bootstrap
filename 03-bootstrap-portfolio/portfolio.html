@@ -185,46 +185,105 @@
 
 <!-- project section -->
 
-<section id="projects" class="my-5 text-center container-lg">
-  <h2 class="display-4 fw-bold mb-5">Projects</h2>
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<section id="projects" class="my-5 container-lg">
+  <h2 class="display-4 fw-bold text-center mb-5">Projects</h2>
+  <div class="position-relative">
+    <!-- Vertical Border -->
+    <div class="vertical-border"></div>
+
     <!-- Project 1 -->
-    <div class="col">
-      <div class="card shadow-lg hover-scale">
-        <img src="./assets/project1.jpg" class="card-img-top" alt="Project 1">
-        <div class="card-body">
-          <h3 class="card-title fw-bold">E-Commerce Website</h3>
-          <p class="card-text">A fully functional e-commerce platform built with React and Node.js.</p>
-          <a href="#" class="btn btn-primary">View Project</a>
+    <div class="row align-items-center my-5">
+      <div class="col-md-6"></div> <!-- Empty Left Side -->
+      <div class="col-md-6">
+        <div class="card shadow-lg hover-scale">
+          <img src="./assets/project1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h3 class="card-title fw-bold">E-Commerce Website</h3>
+            <p class="card-text">A fully functional e-commerce platform built with React and Node.js.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Project 2 -->
-    <div class="col">
-      <div class="card shadow-lg hover-scale">
-        <img src="./assets/project2.jpg" class="card-img-top" alt="Project 2">
-        <div class="card-body">
-          <h3 class="card-title fw-bold">Portfolio Website</h3>
-          <p class="card-text">A modern portfolio website designed with HTML, CSS, and Bootstrap.</p>
-          <a href="#" class="btn btn-primary">View Project</a>
+    <div class="row align-items-center my-5">
+      <div class="col-md-6">
+        <div class="card shadow-lg hover-scale">
+          <img src="./assets/project2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h3 class="card-title fw-bold">Portfolio Website</h3>
+            <p class="card-text">A modern portfolio website designed with HTML, CSS, and Bootstrap.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
         </div>
       </div>
+      <div class="col-md-6"></div> <!-- Empty Right Side -->
     </div>
 
     <!-- Project 3 -->
-    <div class="col">
-      <div class="card shadow-lg hover-scale">
-        <img src="./assets/project3.jpg" class="card-img-top" alt="Project 3">
-        <div class="card-body">
-          <h3 class="card-title fw-bold">Mobile App</h3>
-          <p class="card-text">A cross-platform mobile app developed using Flutter.</p>
-          <a href="#" class="btn btn-primary">View Project</a>
+    <div class="row align-items-center my-5">
+      <div class="col-md-6"></div> <!-- Empty Left Side -->
+      <div class="col-md-6">
+        <div class="card shadow-lg hover-scale">
+          <img src="./assets/project3.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h3 class="card-title fw-bold">Mobile App</h3>
+            <p class="card-text">A cross-platform mobile app developed using Flutter.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Custom CSS for the Border and Circles -->
+<style>
+  /* Vertical Border */
+  .vertical-border {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #007bff, #00ff88);
+  }
+
+  /* Empty Circles on the Border */
+  .vertical-border::before,
+  .vertical-border::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: transparent;
+    border: 4px solid #007bff;
+  }
+
+  .vertical-border::before {
+    top: 20%; /* Position of the first circle */
+  }
+
+  .vertical-border::after {
+    top: 50%; /* Position of the second circle */
+  }
+
+  /* Hover Effect for Project Cards */
+  .hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-scale:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+</style>
+
 
 <!-- contact section -->
 
